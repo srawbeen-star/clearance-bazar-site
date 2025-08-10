@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Clearance Bazar — Nepal's Clearance & Deadstock Marketplace</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Clearance Bazar logo" class="logo">
+        <div class="brand-text">
+          <h1>Clearance Bazar</h1>
+          <p class="tagline">Nepal's No.1 Clearance & Deadstock Marketplace</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#how">How it works</a>
+        <a href="#sellers">Become a Seller</a>
+        <a href="#deals">Deals</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-btn" aria-label="menu">&#9776;</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Clear it. Sell it. Done.</h2>
+          <p>Sell unsold stock and clearance items fast — no listing fee, pay only when it sells. Fashion, sneakers, accessories & more across Nepal.</p>
+          <a class="cta" href="#sellers">List your first items — free</a>
+        </div>
+        <div class="hero-image">
+          <img src="assets/logo.png" alt="Clearance Bazar">
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="how container">
+      <h3>How it works</h3>
+      <div class="steps">
+        <div class="step">
+          <h4>1. Send photos</h4>
+          <p>Upload product photos, sizes, and price — quickly from phone.</p>
+        </div>
+        <div class="step">
+          <h4>2. We list & promote</h4>
+          <p>We create attractive listings and share to our audience for fast sales.</p>
+        </div>
+        <div class="step">
+          <h4>3. You get paid</h4>
+          <p>We handle buyers and delivery options; you receive payment after sale.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="deals" class="deals container">
+      <h3>Featured deals (sample)</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="card-img">Image</div>
+          <h4>Branded Sneakers</h4>
+          <p class="price">Rs 5,200 <span class="was">Rs 8,500</span></p>
+        </article>
+        <article class="card">
+          <div class="card-img">Image</div>
+          <h4>Denim Jacket</h4>
+          <p class="price">Rs 2,400 <span class="was">Rs 4,000</span></p>
+        </article>
+        <article class="card">
+          <div class="card-img">Image</div>
+          <h4>Classic Watch</h4>
+          <p class="price">Rs 3,100 <span class="was">Rs 5,500</span></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="sellers" class="sellers container">
+      <h3>Become a seller</h3>
+      <p>List your clearance items with Clearance Bazar. No listing fee — pay only when an item sells.</p>
+
+      <form class="seller-form" method="get" action="mailto:clearancebazarnepal@gmail.com" enctype="text/plain">
+        <label>Shop / Brand name<input type="text" name="shop" required></label>
+        <label>Contact number<input type="text" name="phone" required></label>
+        <label>Email<input type="email" name="email"></label>
+        <label>Short note / what you sell<textarea name="message"></textarea></label>
+        <button type="submit" class="cta">Contact us</button>
+      </form>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:clearancebazarnepal@gmail.com">clearancebazarnepal@gmail.com</a></p>
+      <p>WhatsApp: +977-98XXXXXXXX</p>
+      <p>Follow us: Instagram / Facebook — <strong>@clearancebazar</strong></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Clearance Bazar — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+  // Basic mobile menu toggle
+  const btn = document.querySelector('.menu-btn');
+  const nav = document.querySelector('.nav');
+  btn.addEventListener('click', function() { nav.classList.toggle('open'); });
+  </script>
+</body>
+</html>

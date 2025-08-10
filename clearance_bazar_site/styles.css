@@ -1,0 +1,61 @@
+
+:root{
+  --red:#E63946;
+  --black:#111;
+  --muted:#666;
+  --container:1100px;
+  --radius:8px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif;color:var(--black);line-height:1.4;background:#fff}
+
+.container{max-width:var(--container);margin:0 auto;padding:20px}
+
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:68px;height:68px;object-fit:contain;border-radius:8px}
+.brand-text h1{font-size:20px;letter-spacing:0.5px}
+.tagline{font-size:13px;color:var(--muted)}
+
+.nav{display:flex;gap:18px;align-items:center}
+.nav a{color:var(--muted);text-decoration:none;font-size:15px}
+.menu-btn{display:none;background:transparent;border:0;font-size:22px;cursor:pointer}
+
+.hero{background:linear-gradient(180deg, #fff 0%, #fff 60%);padding:40px 0}
+.hero-inner{display:flex;gap:24px;align-items:center;justify-content:space-between}
+.hero-text h2{font-size:28px;margin-bottom:10px;color:var(--black)}
+.hero-text p{color:var(--muted);margin-bottom:14px;max-width:520px}
+.cta{display:inline-block;background:var(--red);color:white;padding:10px 16px;border-radius:6px;text-decoration:none}
+
+.hero-image img{width:220px;opacity:0.95;border-radius:12px}
+
+.how{padding:34px 0}
+.how h3{font-size:20px;margin-bottom:16px}
+.steps{display:flex;gap:16px}
+.step{flex:1;background:#fff;border:1px solid #eee;padding:16px;border-radius:8px}
+.step h4{margin-bottom:8px}
+
+.deals{padding:24px 0}
+.cards{display:flex;gap:16px;flex-wrap:wrap}
+.card{background:#fafafa;border:1px solid #eee;padding:14px;border-radius:8px;width:calc(33% - 10px);min-width:180px}
+.card-img{height:120px;background:#eee;border-radius:6px;margin-bottom:10px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+.price{font-weight:700;color:var(--red)}
+.was{text-decoration:line-through;color:var(--muted);font-weight:500;margin-left:8px}
+
+.sellers{padding:24px 0}
+.seller-form{display:grid;gap:10px;max-width:520px}
+.seller-form label{display:flex;flex-direction:column;font-size:14px;color:var(--muted)}
+.seller-form input,.seller-form textarea{padding:10px;border-radius:6px;border:1px solid #ddd;margin-top:6px}
+.seller-form textarea{min-height:80px}
+.site-footer{padding:18px 0;border-top:1px solid #f0f0f0;margin-top:28px;color:var(--muted);text-align:center;font-size:14px}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-inner{flex-direction:column;align-items:flex-start}
+  .cards{flex-direction:column}
+  .card{width:100%}
+  .nav{display:none;flex-direction:column;background:#fff;position:absolute;right:20px;top:80px;padding:10px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+  .nav.open{display:flex}
+  .menu-btn{display:block}
+}
